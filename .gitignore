@@ -41,3 +41,10 @@ yarn-error.log*
 next-env.d.ts
 
 /app/generated/prisma
+
+# trigger.dev temporary and build files
+/.trigger/
+
+# local scratch and debug files
+/scratch/
+

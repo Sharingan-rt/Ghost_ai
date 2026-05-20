@@ -72,4 +72,5 @@ Update this file whenever the current phase, active feature, or implementation s
 - @trigger.dev/sdk ^4.4.4 installed. trigger.config.ts reads project ref from TRIGGER_PROJECT_REF env var. TRIGGER_SECRET_KEY must be set in .env.local for triggering tasks from server code. Run `npx trigger.dev@latest dev` for local development; deploy with `npx trigger.dev@latest deploy`.
 - Prisma 7.8.0 — generated client goes to app/generated/prisma/; import PrismaClient from @/app/generated/prisma/client (no index.ts in v7). Constructor always requires { adapter } argument. @prisma/adapter-pg used for all connections.
 - prisma.config.ts uses schema: "prisma/" (multi-file schema) and reads DATABASE_URL from .env via dotenv.
-- Git Remote Origin updated to `https://github.com/Sharingan-rt/Ghost_ai.git`. Staged and committed all local changes (including rebranded README.md, custom `.gitignore` targeting `.trigger/` and `scratch/`, and deleted unused YouTube assets).
+- Git Remote Origin updated to `https://github.com/Sharingan-rt/Ghost_ai.git`. All rebranded assets, custom `.gitignore` entries, and README changes were successfully committed and pushed to the `main` branch using classic token authentication.
+- Restored the remote URL configuration to the standard path to prevent the plain text token from being stored in the local `.git/config` file.

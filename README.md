@@ -1,240 +1,167 @@
+# Ghost AI — Real-Time Collaborative System Architect
+
+Ghost AI is a real-time collaborative system design workspace. Users describe a system in plain English, an AI agent maps that system onto a shared canvas, collaborators refine the architecture together, and the app generates a persistent Markdown technical specification directly from the resulting graph.
+
 <div align="center">
-  <br />
-    <a href="https://youtu.be/14RP8liACqo" target="_blank">
-      <img src="public/readme/readme-hero.webp" alt="Project Banner">
-    </a>
-  <br />
+  <img src="public/readme/readme-hero.webp" alt="Project Banner" width="100%" style="border-radius: 12px; margin: 20px 0;">
 
   <div>
-
-<img src="https://img.shields.io/badge/-Next.js-black?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-<img src="https://img.shields.io/badge/-Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-<img src="https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-<img src="https://img.shields.io/badge/-shadcn/ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white" /><br/>
-
-<img src="https://img.shields.io/badge/-Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />
-<img src="https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/-Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" /><br/>
-
-<img src="https://img.shields.io/badge/Trigger.dev-22c55e?style=for-the-badge&logo=triggerdotdev&logoColor=white" />
-<img src="https://img.shields.io/badge/-Liveblocks-050505?style=for-the-badge&logo=liveblocks&logoColor=white" />
-<img src="https://img.shields.io/badge/-CodeRabbit-orange?style=for-the-badge&logo=coderabbit&logoColor=white" />
-
+    <img src="https://img.shields.io/badge/-Next.js-black?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+    <img src="https://img.shields.io/badge/-shadcn/ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white" /><br/>
+    <img src="https://img.shields.io/badge/-Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />
+    <img src="https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" /><br/>
+    <img src="https://img.shields.io/badge/Trigger.dev-22c55e?style=for-the-badge&logo=triggerdotdev&logoColor=white" />
+    <img src="https://img.shields.io/badge/-Liveblocks-050505?style=for-the-badge&logo=liveblocks&logoColor=white" />
   </div>
-
-  <h3 align="center">AI-Powered Collaborative System Architect</h3>
-
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/watch?v=XUkNR-JfHwo" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
 </div>
 
-## 📋 <a name="table">Table of Contents</a>
+---
 
-1. ✨ [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🔗 [Assets](#links)
-6. 🚀 [More](#more)
+## 📋 Table of Contents
 
-## 🚨 Tutorial
+1. ✨ [Introduction](#-introduction)
+2. ⚙️ [Tech Stack](#️-tech-stack)
+3. 🔋 [Key Features](#-key-features)
+4. 🤸 [Quick Start (Local Setup)](#-quick-start-local-setup)
+5. 📂 [Project Structure](#-project-structure)
+6. 🚀 [Production Hosting](#-production-hosting)
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
+---
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
+## ✨ Introduction
 
-<a href="https://youtu.be/14RP8liACqo" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+**Ghost AI** is an agentic planning and collaborative design application built for modern engineering teams. 
 
-## <a name="introduction">✨ Introduction</a>
+A user submits a natural-language prompt (e.g., *"Design a scalable e-commerce backend with RabbitMQ and a green PostgreSQL database"*), and a Google Gemini-powered AI agent autonomously places custom nodes and edges onto a shared React Flow canvas in real-time. Team members can watch the AI build the diagram live, then collaboratively edit, resize, style, and connect nodes. 
 
-Ghost Arc is an agentic planning application built for software teams. A user submits a natural-language prompt (e.g., "Design a scalable e-commerce backend") and a Google Gemini-powered AI agent autonomously places nodes and edges onto a shared React Flow canvas in real-time. Human teammates can watch the AI build the diagram live, then jump in to collaboratively refine it. Once the team is satisfied, a second AI background task converts the visual graph into a comprehensive, multi-page Markdown technical specification that can be downloaded directly from the app.
+Once satisfied, the team can trigger spec generation. A second serverless background task translates the visual canvas graph into a comprehensive, multi-page Markdown technical specification that can be viewed in a gorgeous markdown modal or downloaded instantly as an attachment.
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
+---
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+## ⚙️ Tech Stack
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+* **Frontend Framework:** [Next.js 16 (Turbopack) & React 19](https://nextjs.org/) — server-side rendering, type-safe API routers, and optimized image/font asset delivery.
+* **Component Library & Styling:** [Tailwind CSS v4 & shadcn/ui](https://ui.shadcn.com/) — bespoke dark-themed CSS variables mapped directly to components.
+* **Authentication:** [Clerk Auth Middleware](https://clerk.com/) — session synchronization, secure route protection, and metadata-aware profiles.
+* **Database & ORM:** [Prisma ORM & Prisma Postgres](https://www.prisma.io/) — type-safe relation modeling, transactional task run records, and hosted cloud database persistence.
+* **Real-time multiplayer:** [Liveblocks Socket Network & React Flow](https://liveblocks.io/) — WebSocket presence indicators, live shared cursor tracking, and collaborative state management.
+* **Background Tasks:** [Trigger.dev serverless jobs](https://trigger.dev/) — robust orchestrator for heavy Gemini AI generations and spec document compilations.
+* **Artifact Storage:** [Vercel Blob Storage](https://vercel.com/features/blob) — private secure storage for canvas states and technical specs.
 
-- **[Next.js](https://nextjs.org/)** is a production-ready React framework that offers server-side rendering, static site generation, and powerful routing features. It streamlines the development of full-stack web applications by providing a comprehensive ecosystem for performance optimization, data fetching, and API development.
+---
 
-- **[React](https://react.dev/)** is a popular JavaScript library for building declarative and component-based user interfaces. It excels at creating reusable UI components and efficient state management, making it the standard choice for building dynamic and interactive single-page applications.
+## 🔋 Key Features
 
-- **[TypeScript](https://www.typescriptlang.org/)** is a strongly typed superset of JavaScript that adds static type definitions to your code. It significantly improves developer productivity and code reliability by catching errors during development, enhancing IDE support, and facilitating maintainability in large-scale projects.
+* 👉 **AI Architecture Agent:** Submit plain-English prompts; Gemini compiles visual canvas nodes, positions them cleanly, and writes them live to shared storage.
+* 👉 **Multiplayer Canvas:** WebSocket synchronization enables collaborative editing, real-time presence cursor tracking, and active participant avatar stacks.
+* 👉 **Bespoke Canvas Node Styling:** Draggable custom shapes (Rectangle, Decision Diamond, Pill Service, Circle Event, Database Cylinder, Hexagon Boundary) with 8 custom color-matching palettes.
+* 👉 **Inline Editing & Resizing:** Double-click labels or edges to edit text inline; grab resize handles to shape components dynamically.
+* 👉 **AI Spec Compilation:** Generates structured technical spec documents (including Architecture summary, Data models, Caching/Messaging strategies, Security, and Deployment guidelines) in markdown.
+* 👉 **Canvas Autosave:** Debounced-saves canvas graphs every 3 seconds of inactivity to Vercel Blob and links the file record in PostgreSQL.
+* 👉 **Project Collaboration Management:** Create projects, manage share access, invite collaborators by email, and track workspace ownership.
 
-- **[Liveblocks](https://jsm.dev/ghost-liveblocks)** is a real-time collaboration infrastructure that enables developers to build multiplayer experiences. It provides robust APIs for presence, shared state, and text synchronization, allowing you to easily add collaborative features like cursors, whiteboard tools, and shared document editing to your apps.
+---
 
-- **[Clerk](https://jsm.dev/ghost-clerk)** is a specialized authentication and user management platform for React and Next.js. It offers drop-in pre-built components for sign-in, sign-up, and profile management, while handling complex requirements like session management, multi-factor authentication, and organization hierarchies out of the box.
-
-- **[Trigger.dev](https://jsm.dev/ghost-triggerdev)** is an open-source platform for orchestrating long-running background jobs and workflows. It allows developers to define jobs directly in their code that respond to webhooks, schedules, or events, handling retries, delays, and state management without the need for complex infrastructure.
-
-- **[Prisma ORM](https://www.prisma.io/)** is a next-generation ORM for Node.js and TypeScript that simplifies database interactions. By providing a type-safe client generated from your schema, it makes querying your database intuitive, readable, and highly efficient, effectively eliminating common SQL-related runtime errors.
-
-- **[PostgreSQL](https://www.postgresql.org/)** is an advanced, open-source object-relational database system widely recognized for its reliability, extensibility, and standard compliance. It provides the persistent storage layer for your application, supporting complex queries, transactional integrity, and large-scale data handling.
-
-- **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework that enables rapid custom UI development. By utilizing low-level utility classes directly in your markup, it removes the need to switch between CSS and HTML files, allowing for highly consistent and responsive design systems.
-
-- **[shadcn/ui](https://ui.shadcn.com/)** is a collection of beautifully designed, accessible, and re-usable UI components that you can copy and paste directly into your projects. Built on top of Radix UI and Tailwind CSS, it grants you full control over your component code, avoiding the bloat of traditional component libraries.
-
-- **[CodeRabbit](https://jsm.dev/ghost-coderabbit)** is an AI-powered code review assistant that automates pull request analysis. It provides line-by-line feedback, suggests code improvements, summarizes changes, and helps maintain high code quality by integrating seamlessly into your git-based development workflow.
-
-## <a name="features">🔋 Features</a>
-
-👉 **AI Architecture Agent**: Submit a plain-English prompt; Gemini draws nodes and edges onto the live canvas in real-time via Trigger.dev background tasks and the Liveblocks Node.js SDK.
-
-👉 **Multiplayer Canvas**: Full real-time collaboration powered by Liveblocks: synchronized node/edge state, live cursor positions, and presence avatars for every connected user.
-
-👉 **Custom Canvas Nodes**: Double-click to edit node labels inline; select to resize with NodeResizer; choose from 12 colour swatches via a floating NodeToolbar — all synced across clients instantly.
-
-👉 **AI Spec Generation**: One click converts the current graph into a detailed Markdown technical specification using a second Gemini-powered Trigger.dev task.
-
-👉 **Multi-Spec Storage**: Each project stores multiple specs. Metadata lives in PostgreSQL (Prisma); content is stored as Markdown files on disk (`data/specs/{projectId}/{specId}.md`).
-
-👉 **Downloadable Specs**: Every generated spec is available via a dedicated download API route.
-
-👉 **Clerk Authentication**: Global route protection via `clerkMiddleware`; Liveblocks tokens are only issued to authenticated users.
-
-👉 **Auto-Save Canvas**: The canvas state is debounced-saved to `data/canvas/{projectId}.json` every 3 seconds of inactivity.
-
-👉 **Project Management**: Create projects from a slide-in sidebar; project slugs auto-generate room IDs; the active room is highlighted.
-
-👉 **Share**: One-click URL copy with a 1.5 s "Copied" confirmation.
-
-And many more, including code architecture and reusability.
-
-## <a name="quick-start">🤸 Quick Start</a>
+## 🤸 Quick Start (Local Setup)
 
 Follow these steps to set up the project locally on your machine.
 
-**Prerequisites**
+### Prerequisites
+* [Node.js (v20+)](https://nodejs.org/)
+* [Git](https://git-scm.com/)
+* npm (Node Package Manager)
 
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/adrianhajdin/ghost-ai.git
-cd ghost-ai
+git clone https://github.com/MISTERXYMISTER/Ghost-ai.git
+cd Ghost-ai
 ```
 
-**Installation**
-
-Install the project dependencies using npm:
-
+### 2. Install Dependencies
 ```bash
 npm install
 ```
 
-**Set Up Environment Variables**
-
-Create a new file named `.env` in the root of your project and add the following content:
-
+### 3. Setup Environment Variables
+Create a `.env` file at the root of the project:
 ```env
-# Clerk
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
+# Database
+DATABASE_URL="postgres://.../postgres?sslmode=verify-full"
+
+# Clerk Auth
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+CLERK_SECRET_KEY=sk_test_...
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
-LIVEBLOCKS_SECRET_KEY=
+# Liveblocks
+LIVEBLOCKS_SECRET_KEY=sk_dev_...
 
-TRIGGER_SECRET_KEY=
-NEXT_PUBLIC_TRIGGER_PUBLIC_API_KEY=
+# Trigger.dev Tasks
+TRIGGER_SECRET_KEY=tr_dev_...
+TRIGGER_PROJECT_REF=proj_...
 
-DATABASE_URL=
+# Google AI
+GOOGLE_GENERATIVE_AI_API_KEY=AIzaSy...
 
-━━━━━━━━━━━━━━━━━━━━
-# Google
-GOOGLE_GENERATIVE_AI_API_KEY=
-# Optional: override the default Gemini model (default: gemini-2.0-flash)
-GEMINI_MODEL=
-# Optional: override model used specifically for spec generation
-GEMINI_SPEC_MODEL=
+# Vercel Blob
+BLOB_READ_WRITE_TOKEN=vercel_blob_rw_...
 
-━━━━━━━━━━━━━━━━━━━━
+# App URL
 APP_URL=http://localhost:3000
 ```
 
-Replace the placeholder values with your real credentials. You can get these by signing up at: [**Clerk**](https://jsm.dev/ghost-clerk), [**Liveblocks**](https://jsm.dev/ghost-liveblocks), [**Trigger.dev**](https://jsm.dev/ghost-triggerdev), [**Google AI Studio**](https://aistudio.google.com/).
-
-**Running the Project**
-
+### 4. Build and Run the App
+Launch the Next.js development server:
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-**Run Trigger.dev (Background Tasks)**
-
-In a second terminal, start the Trigger.dev dev worker so background AI tasks execute locally:
-
+In a second terminal, launch the local tasks worker process:
 ```bash
-npx trigger.dev@latest dev
+npx trigger.dev@latest dev --skip-update-check
 ```
 
-## Available Scripts
-
-| Command                   | Description                           |
-| ------------------------- | ------------------------------------- |
-| `npm run dev`             | Start Next.js development server      |
-| `npm run build`           | Build for production                  |
-| `npm run start`           | Start production server               |
-| `npm run lint`            | Run ESLint                            |
-| `npm run prisma:generate` | Regenerate Prisma client              |
-| `npm run prisma:migrate`  | Create and apply a new migration      |
-| `npm run prisma:deploy`   | Apply pending migrations (production) |
-| `npm run prisma:studio`   | Open Prisma Studio GUI                |
+Open [http://localhost:3000](http://localhost:3000) in your web browser.
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 .
 ├── app/
-│   ├── api/              # Next.js API routes (auth, AI, projects, specs)
-│   ├── editor/           # Canvas editor pages
-│   ├── generated/prisma/ # Auto-generated Prisma client
-│   ├── sign-in/          # Clerk sign-in page
-│   └── sign-up/          # Clerk sign-up page
+│   ├── api/              # API routes (Clerk auth, Gemini design/spec triggers, autosave)
+│   ├── editor/           # Canvas workspace pages
+│   ├── generated/prisma/ # Auto-generated type-safe Prisma client
+│   └── layout.tsx        # Application root layout wrapped in Clerk & Liveblocks providers
 ├── components/
-│   ├── editor/           # Canvas UI components (editor, sidebar, AI chat)
-│   └── ui/               # Reusable shadcn/ui primitives
-├── data/
-│   ├── canvas/           # Auto-saved React Flow graph JSON per project
-│   └── specs/            # Generated Markdown specs per project
-├── docs/                 # Project documentation
-├── hooks/                # Custom React hooks (auto-save, keyboard shortcuts)
-├── lib/                  # Shared utilities (Prisma client, Liveblocks, AI agents)
-├── prisma/               # Prisma schema and migrations
-├── trigger/              # Trigger.dev background task definitions
-│   ├── design-agent.ts   # AI canvas generation task
-│   └── generate-spec-gemini.ts  # AI spec generation task
-└── types/                # Shared TypeScript types
+│   ├── editor/           # Workspace Navbar, Project Sidebar, AI Chat Feed
+│   │   └── canvas/       # Multi-user canvas rendering, cursors, shapes, controls
+│   └── ui/               # Reusable atomic shadcn/ui primitives
+├── context/              # Architectural, UI theme, and developmental guidelines
+├── hooks/                # Custom React hooks (autosave, shortcuts, dialog state)
+├── lib/                  # Shared utility layers (Prisma adapter, Liveblocks client, AI helper)
+├── prisma/               # Prisma schema modeling and migrations
+├── trigger/              # Trigger.dev background task workflow handlers
+└── types/                # System-wide type contracts and interfaces
 ```
 
+---
 
+## 🚀 Production Hosting
 
-## <a name="links">🔗 Assets</a>
+### 1. Web App (Vercel)
+The Next.js frontend and API endpoints are built to deploy natively on **Vercel** with a single click. Connect your GitHub repository, add your environment variables in the project settings, and click **Deploy**.
 
-Assets and snippets used in the project can be found in the **[video kit](https://jsmastery.com/video-kit/f94dd75a-4d9c-4c7c-af39-6e4668389421)**.
+### 2. Background Workers (Trigger.dev Cloud)
+To deploy your Gemini background task workers to the cloud, run:
+```bash
+npx trigger.dev@latest deploy
+```
 
-<a href="https://jsmastery.com/video-kit/f94dd75a-4d9c-4c7c-af39-6e4668389421" target="_blank">
-  <img src="public/readme/readme-videokit.webp" alt="Video Kit Banner">
-</a>
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with our Pro Courses**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://jsm.dev/ghost-jsm" target="_blank">
-  <img src="public/readme/readme-jsmpro.webp" alt="Project Banner">
-</a>
+---
+*Created by **MISTERXYMISTER**.*

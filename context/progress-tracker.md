@@ -3,10 +3,10 @@
 Update this file whenever the current phase, active feature, or implementation state changes.
 
 ## Current Phase
-- Feature 28 (Spec Persistence & Download) — complete
+- E2E Verification & Interactive Testing — complete
 
 ## Current Goal
-- Feature 29 (TBD)
+- Production Deployment — in progress
 
 ## Completed
 
